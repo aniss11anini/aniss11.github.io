@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Historia</title>
+<link rel="stylesheet" href="histo.CSS">
+</head>
+
+<body>
+
+<header>
+<img src="../img/I.E.Barrio_San_Nicolas.png">
+<h2>Institución Educativa Barrio San Nicolás</h2>
+</header>
+
+<nav>
+<a href="pag.html">Inicio</a>
+<a href="history.html">Historia</a>
+<a href="direc.html">Directivos</a>
+<a href="docen.html">Docentes</a>
+</nav>
+
+<div class="container">
+<h2>Nuestra Historia</h2>
+
+<p>
+La institución educativa Barrio San Nicolás fue aprobada por secretaría de educación el 4 de diciembre de 2015, 
+abriendo sus puertas a la comunidad educativa el 10 de Enero de 2017, brindando educación desde el grado transición a undécimo.
+</p>
+
+<p>
+Se incia el proceso formativo con 20 grupos, 646 estudaintes, 24 docentes, 1 coordinador, 1 rector, 
+1 secretaria y 1 orientadora escolar (Psióloga).
+</p>
+
+<div class="slider">
+<img id="slide" src="https://master2000.net/recursos/fotos/567//42525WhatsApp%20Image%202023-03-08%20at%201.17.08%20PM%20(1).jpeg">
+
+</div>
+
+</div>
+
+<footer>
+Creado por Anny Londoño
+</footer>
+
+<script>
+
+let imagenes = [
+"https://master2000.net/recursos/fotos/567//354295s%2012.jpg",
+"https://master2000.net/recursos/fotos/567//1441113%20Acto%20c%C3%ADvico%20fundaci%C3%B3n%20de%20Medell%C3%ADn%20(18).jpg",
+"https://master2000.net/recursos/fotos/567//58692D%C3%ADa%20del%20idioma.jpg",
+"https://modulo.master2000.net/recursos/uploads/567/05_DOCENTES/docentes2017.jpg"
+]
+
+let i = 0
+
+setInterval(function(){
+i++
+if(i >= imagenes.length){
+i = 0
+}
+
+document.getElementById("slide").src = imagenes[i]
+
+},3000)
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f7e1fa);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background: rgba(255,255,255,0.95);
+    padding: 35px;
+    width: 420px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    animation: aparecer 0.8s ease;
+}
+
+aparecer{
+    from{
+        opacity:0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+h2{
+    text-align: center;
+    color: #7ac8f5;
+    letter-spacing: 2px;
+}
+
+p{
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+select{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #6cd0ff;
+    background: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus{
+    border-bottom: 2px solid #ff6ec4;
+}
+
+input[type="radio"]{
+    accent-color: #82d6f0;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    margin-top: 15px;
+    padding: 12px;
+    width: 48%;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]{
+    background: linear-gradient(45deg,#72cbf5);
+    color: white;
+}
+
+input[type="reset"]{
+    background: linear-gradient(45deg,#7dcbf8);
+    color: white;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.05);
+}
+
+input[type="reset"]:hover{
+    transform: scale(1.05);
+}
